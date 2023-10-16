@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="img/PicsArt_09-11-04.16.07.png">
+    <link rel="stylesheet" href="page4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="page4.js"></script>
+    <title>World Wide Library</title>
+</head>
+<body>
+     <!-- website logo-->
+  <img src="img/PicsArt_09-11-04.16.07.png" width="60px" align="left" >
+
+  <!-- tape -->
+  <div class="static-tape">
+    <ul>
+      <li><a href="../page1/page1.html" target="_blank">Main</a></li>
+      <li><a href="../page2/page2.html" target="_blank">About Us</a></li>
+      <li><a href="../page3/page3.html " target="_blank">Comments</a></li>
+      <li><a href="page4.html">Users</a></li>
+    </ul>
+   </div> <br><br><br><br>
+
+      <form class="container">
+        <label for="first">User Frist_Name</label>
+        <input type="text" name="first" id="first" placeholder="First Name" required>
+
+        <label for="last">User Last_Name</label>
+        <input type="text" name="last" id="last" placeholder="Last Name" required>
+
+        <label for="mail">User E_Mail</label>
+        <input type="email" name="mail" id="mail" placeholder="E_Mail" required>
+
+        <label for="age">User Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" required>
+
+        <input type="button" value="ADD" id="button" onclick="Addrow()">
+        <input type="reset" id="button">
+      </form>
+    <br><br>
+
+    <table id="show">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>E_Mail</th>
+            <th>Age</th>
+        </tr>
+    </table>
+
+    <!-- footer -->
+<footer class="footer">
+  <a href="https://www.instagram.com"><i id="icon1" class="fa-brands fa-instagram" ></i></a>&nbsp;
+   <a href="https://www.facebook.com"><i id="icon2" class="fa-brands fa-facebook"></i></a>&nbsp;
+   <a href="https://www.youtube.com"><i id="icon3" class="fa-brands fa-youtube"></i></a>&nbsp;
+   <a href="https://www.whatsapp.com"><i id="icon4" class="fa-brands fa-whatsapp"></i></a>&nbsp;
+   <a href="https://www.twitter.com"><i id="icon5" class="fa-brands fa-twitter"></i></a>
+ </footer>
+ 
+</body>
+</html>

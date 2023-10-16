@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="short icon" href="img/PicsArt_09-11-04.16.07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>World Wide Library</title>
+</head>
+<body>
+
+   <!-- website logo-->
+   <img src="img/PicsArt_09-11-04.16.07.png" width="60px" align="left" >
+
+   <!-- tape -->
+   <div class="static-tape">
+     <ul>
+      <li><a href="../page1/page1.html" target="_blank">Main</a></li>
+      <li><a href="page2.html">About Us</a></li>
+       <li><a href="../page3/page3.html" target="_blank">Comments</a></li>
+       <li><a href="../page4/page4.html" target="_blank">Users</a></li>
+     </ul>
+   </div>
+    
+   <!-- header2-->
+    <h2>About Us</h2>
+
+    <!-- textarea  -->
+<form>
+<textarea class="text" cols="70" rows="6" readonly>
+This Website is a library and a shop at the same time,
+if you want to read a book this is the right place we have more than 100,000
+books in all sections, hostorical, logic, religin, scinse, space and others.
+We also sale books.
+where ever  were are you we will deliver the book to you.
+</textarea>
+</form>
+<br>
+
+<div class="container">
+  <p >To Buy a Book, You should fill this form:</p>
+</div>
+
+    <!--the button that shows the form -->
+    <button onclick="toggleForm()">click here</button>
+
+    
+    <div id="form-container">
+  
+      <!-- form of 7 input with method, novalidate and autocomplete attributes -->
+      <form method="post" novalidate autocomplete="off" class="form-container">
+          
+              <legend><b><i>Buyer Information</i></b> </legend><br>
+  
+          <label for="x" class="label1">Buyer Name</label>
+          <input type="text" name="x" placeholder="Name" required><br><br>
+  
+          <label for="x" class="label2">Buyer Number</label>
+          <input type="number" name="x" placeholder="Phone_Number" required><br><br>
+  
+          <label for="x" class="label3">Buyer E_Mail</label>
+          <input type="email" name="x" placeholder="E_mail"><br><br>
+  
+          <label for="x" class="label4">Book Name</label>
+          <input type="text" name="x" placeholder="Book Name"><br><br required>
+  
+          <label for="x" class="label5">Quantity</label>
+          <input type="number" name="x" placeholder="Number of Books"><br><br>
+  
+          <!-- selection-->
+          <h3 font-color="white">City</h3>
+          <select>
+              <option value="Sana'a" selected>Sana'a</option>
+              <option value="Taiz">Taiz</option>
+              <option value="Ibb">Ibb</option>
+              <option value="Aden">Aden</option>
+              <option value="Hodida">Hodida</option>
+              <option value="Amran">Amran</option>
+              <option value="Haja">Haja</option>
+              <option value="Hadramot">Hadramot</option> 
+          </select><br><br>
+  
+          <!-- submit button that shows the message -->
+          <input type="submit" class="button" onclick="alert('Thanks for Communication')" >
+          <input type="reset" class="button">
+      </form>
+    </div>
+      <!-- javascript function for the form-->
+    <script>
+        function toggleForm() 
+        {
+          var formContainer = document.getElementById("form-container");
+          formContainer.classList.toggle("show");
+        }
+      </script>
+
+<!-- footer -->
+<footer class="footer">
+  <a href="https://www.instagram.com"><i id="icon1" class="fa-brands fa-instagram" ></i></a>&nbsp;
+   <a href="https://www.facebook.com"><i id="icon2" class="fa-brands fa-facebook"></i></a>&nbsp;
+   <a href="https://www.youtube.com"><i id="icon3" class="fa-brands fa-youtube"></i></a>&nbsp;
+   <a href="https://www.whatsapp.com"><i id="icon4" class="fa-brands fa-whatsapp"></i></a>&nbsp;
+   <a href="https://www.twitter.com"><i id="icon5" class="fa-brands fa-twitter"></i></a>
+ </footer>
+</body>
+</html>
